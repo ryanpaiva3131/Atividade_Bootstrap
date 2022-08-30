@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Atividade Bootstrap</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    .container {
+        width: 80vw;
+        height: auto;
+    }
+
+  </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="./index.html"><span class="glyphicon glyphicon-home"> </span> Atividade Bootstrap</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li><a href="./index.html">Página Inicial</a></li>
+            <li><a href="./table.html">Tabelas</a></li>
+            <li><a href="./forms.html">Formulários</a></li>
+            <li class="active"><a href="./modal.html">Janelas Modais</a></li>
+            <li><a href="./carousel.html">SlideShow</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container">
+        <h2>Exemplo Janela Modal</h2>
+        <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">Abrir Pop-up</button>
+      
+        <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog">
+          
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Janela Modal</h4>
+              </div>
+              <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus exercitationem perspiciatis architecto amet, mollitia distinctio sunt inventore soluta eos eius dolores facere illum. Cum ullam nostrum iure aliquid maxime odio.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+      </div>
+      
+
+</body>
+</html>
